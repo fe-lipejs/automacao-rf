@@ -1,0 +1,28 @@
+.ctn-dias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  user-select: none;
+}
+
+.dia-label {
+  padding: 10px 16px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+
+}
+
+.dia-label:hover {
+  border-color: #999;
+}
+
+.dia-label.ativo {
+  background-color: #4caf50;
+  color: white;
+  border-color: #4caf50;
+}
+.ctn-dias {
+  touch-action: none;
+}
