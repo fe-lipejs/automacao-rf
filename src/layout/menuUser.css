@@ -1,11 +1,11 @@
 .menu-inativo {
-    transition: all 0.5s ease;
-    transform: translate(-100%);
+    transition: all 0.8s ease;
+    /* transform: translate(-100%); */
     opacity: 0;
 }
 
 .menu-ativo {
-    transition: all 0.5s ease;
+    transition: all 0.8s ease;
     transform: translate(0);
     opacity: 1;
 }

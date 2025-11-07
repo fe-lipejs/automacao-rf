@@ -55,7 +55,7 @@
     }
 
     .upload img {
-        z-index: -3;
+      z-index: -3;
       width: 40px;
       opacity: 0.6;
     }
@@ -69,7 +69,7 @@
 
     button {
       width: 100%;
-      background-color: #333;
+      background-color: rgb(247, 124, 0);
       color: #fff;
       padding: 12px;
       border: none;

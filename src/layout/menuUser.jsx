@@ -17,7 +17,7 @@ const MenuUser = () => {
         <div>
             <header>
             <div className={`menu-container 
-                    lg:hidden absolute z-0 p-4
+                    lg:w-[20vw] absolute z-0 p-4
                     h-screen w-[60vw] bg-white shadow
                     ${menuAtivo ? "menu-ativo" : "menu-inativo"}
                 `}>
@@ -28,7 +28,7 @@ const MenuUser = () => {
                         <div className='text-xl font-semibold text-center'>Nome Loja</div>
                         <div className='text-center'>Outras informações relevantes</div>
                     </div>
-                    <div className="links-paginas space-y-2 text-2xl font-semibold">
+                    <div  onClick={menuAlternar} className="links-paginas space-y-2 text-2xl font-semibold">
                         <br /><br /><br />
                         <div><Link to="/">Home</Link></div>
                         {/* <div><Link to="/admin">Admin</Link></div> */}

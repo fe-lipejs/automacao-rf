@@ -7,14 +7,13 @@ MenuUser from './layout/menuUser'
 
 // Paginas Admin
 import AdminAgenda from './pages/admin/agenda'
-import CadServico from './pages/admin/cadServico';
+import Servico from './pages/admin/servico';
 // Paginas Usuario
 import Home from './pages/home'
 
 function App() {
 
   return (
-
 
     <BrowserRouter>
       <Routes>
@@ -25,7 +24,7 @@ function App() {
         {/* Rotas admin */}
         <Route element={<MenuUser />}>
           <Route path="/admin/agenda" element={<AdminAgenda />} />
-          <Route path="admin/servico" element={<CadServico/>}/>
+          <Route path="admin/servico" element={<Servico/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
