@@ -36,10 +36,12 @@ const MenuUser = () => {
                         <div><Link to="/admin/agenda">Agenda</Link></div>
                     </div>
                     <br /><br /><br />
-                    <div className='flex'>
+                    <Link to="/cadastro">
+                    <div onClick={menuAlternar} className='flex'>
                         <img className='w-[30px] h-[30px]' src="https://img.icons8.com/?size=100&id=22112&format=png&color=000000" alt="" />
                         <div className='text-2xl font-semibold'>Sair</div>
                     </div>
+                    </Link>
                 </div>
                 <nav className="flex justify-between items-center p-4 bg-white  shadow">
                     <img onClick={menuAlternar} src={HamMenu} alt="" className='w-7 h-7' />

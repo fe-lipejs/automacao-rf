@@ -5,9 +5,23 @@
   display: none;
 }
 body{
-  /* background: #100E0F; */
+  background: #cbcbcb60;
+  /* background: #5404ff; */
+  /* background: #2e2e2e; */
 }
 .scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+
+/* src/index.css ou global.css */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset; /* muda o fundo */
+  -webkit-text-fill-color: #111; /* cor do texto */
+  transition: background-color 5000s ease-in-out 0s; /* remove o amarelo padrão */
+}
+
+input:-webkit-autofill:focus {
+  border-color: #3b82f6; /* muda a borda quando foca */
 }
