@@ -4,6 +4,9 @@
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+body{
+  /* background: #100E0F; */
+}
 .scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;

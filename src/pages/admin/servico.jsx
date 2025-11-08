@@ -25,7 +25,7 @@ export default function CategoryDropdown() {
   return (
     <>
       {categories.map((cat) => (
-        <div className="category-container" key={cat.id}>
+        <div className="category-container sm:w-130 md:w-130" key={cat.id}>
           <div className="category-header">
             <div className="category-title">
               <span className="category-name">{cat.name}</span>

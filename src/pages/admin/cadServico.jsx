@@ -2,7 +2,7 @@ import './cadServico.css'
 
 function CadServico() {
     return (
-        <div className="container">
+        <div className="container ">
             <h1>Postar Serviço</h1>
 
             <label htmlFor="categoria">Categoria</label>

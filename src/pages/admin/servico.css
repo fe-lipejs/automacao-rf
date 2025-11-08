@@ -1,5 +1,5 @@
 .category-container {
-  width: 320px;
+  /* min-width: 320px; */
   margin: 20px auto;
   border-radius: 10px;
   background: #fff;

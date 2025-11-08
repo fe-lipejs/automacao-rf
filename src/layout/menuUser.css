@@ -9,3 +9,8 @@
     transform: translate(0);
     opacity: 1;
 }
+
+.menu-container{
+    /* nenhum component fica acima dele */
+    z-index:100; 
+}

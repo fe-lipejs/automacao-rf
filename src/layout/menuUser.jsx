@@ -31,7 +31,7 @@ const MenuUser = () => {
                     <div  onClick={menuAlternar} className="links-paginas space-y-2 text-2xl font-semibold">
                         <br /><br /><br />
                         <div><Link to="/">Home</Link></div>
-                        {/* <div><Link to="/admin">Admin</Link></div> */}
+                        <div><Link to="/admin/perfil">Perfil</Link></div>
                         <div><Link to="/admin/servico">Serviços</Link></div>
                         <div><Link to="/admin/agenda">Agenda</Link></div>
                     </div>
