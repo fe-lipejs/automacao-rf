@@ -1,6 +1,16 @@
-th {
+td{
+    padding: 10px;
+    padding-inline: 30px;
+    /* background: blue; */
+    
+    border-radius: 5px;
     border-collapse: separate;
-    padding:4px 14px;
-    color: green;
-
+    border-spacing: 8px;
+    /* font-weight: 800; */
+    text-align: center;
+    border: solid rgb(167, 167, 167) 1px;
+    cursor: pointer;
+}
+.td-apagado{
+    background: rgb(234, 234, 234);
 }
