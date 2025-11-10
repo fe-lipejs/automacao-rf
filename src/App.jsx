@@ -12,6 +12,7 @@ import Perfil from './pages/admin/perfil';
 // Paginas Usuario
 import Home from './pages/home'
 import Cadastro from './pages/cadastro'
+import Agendamento from './pages/user/agendamento'
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
         <Route element={<MenuUser />}>
           <Route path="/" element={<Home />} />
           <Route path="/cadastro" element={<Cadastro />} />
+          <Route path="/agendamento" element={<Agendamento />} />
         </Route>
         {/* Rotas admin */}
         <Route element={<MenuUser />}>

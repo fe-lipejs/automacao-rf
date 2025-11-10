@@ -1,28 +1,6 @@
-.ctn-dias {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  user-select: none;
-}
-
-.dia-label {
-  padding: 10px 16px;
-  border: 2px solid #ccc;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: 0.2s;
-
-}
-
-.dia-label:hover {
-  border-color: #999;
-}
-
-.dia-label.ativo {
-  background-color: #121212;
-  color: white;
-  border-color: #141414;
-}
-.ctn-dias {
-  touch-action: none;
+container{
+  background-color: rgb(0, 94, 125);
+  background-color: rgb(26, 26, 26);
+  color: #f0f0f0;
+  box-shadow: 0px 5px 10px 0px#111111;
 }

@@ -11,6 +11,7 @@
 }
 
 .menu-container{
+    /* display: none; */
     /* nenhum component fica acima dele */
     z-index:100; 
 }
