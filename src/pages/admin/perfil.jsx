@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-
+import {useNavigate} from "react-router-dom";
 export default function App() {
     const [selectedColor, setSelectedColor] = useState("");
+    const navigate = useNavigate();
 
     const colors = [
         "#ff4757", // vermelho
@@ -152,7 +153,12 @@ export default function App() {
 
                 {/* Botão salvar */}
                 <div className="mt-10">
-                    <button className="w-full md:w-auto px-10 py-3 bg-gray-900 hover:bg-blue-600 text-white font-semibold rounded-lg transition block mx-auto">
+                    <button 
+                    onClick={() => {
+                        alert("Salvo!")
+                        navigate("/admin/dashboard");
+                    }}
+                    className="w-full md:w-auto px-10 py-3 bg-gray-900 hover:bg-blue-600 text-white font-semibold rounded-lg transition block mx-auto">
                         Salvar
                     </button>
                 </div>

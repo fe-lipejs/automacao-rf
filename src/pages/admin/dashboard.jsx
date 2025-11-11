@@ -1,8 +1,10 @@
 import React from "react"
+import { useNavigate } from "react-router-dom";
 import { Outlet, Link } from 'react-router-dom';
 
 
 function Dashboard() {
+    const navigate = useNavigate()
     return (
         <>
             <div className="text-neutral-300">
@@ -36,11 +38,17 @@ function Dashboard() {
                             </div>
                         </div>
                         {/* Botão Editar Perfil */}
-                        <div className="m-5 p-2 w-full rounded-md cursor-pointer
-                        bg-neutral-900 active:bg-neutral-600 font-semibold
-                    ">
+
+                        <div 
+                            onClick={() =>{
+                                navigate("/admin/perfil")
+                            }}
+                            className="m-5 p-2 w-full rounded-md cursor-pointer
+                                 bg-neutral-900 active:bg-neutral-600 font-semibold
+                            ">
                             Editar Perfil
                         </div>
+ 
                     </div>
 
                     {/* Botões de Configuração */}
