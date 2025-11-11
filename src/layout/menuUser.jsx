@@ -20,7 +20,7 @@ const MenuUser = () => {
                     lg:w-[20vw] absolute z-0 p-4
                     h-screen w-[60vw] bg-gray-900 text-neutral-100 shadow
                     ${menuAtivo ? "menu-ativo" : "menu-inativo"}
-                `}> <i onClick={menuAlternar} class="fa-solid fa-xmark text-3xl pr-3"></i>
+                `}> <i onClick={menuAlternar} className="fa-solid fa-xmark text-3xl pr-3"></i>
                     {/* <i onClick={menuAlternar} className='w-[48px] h-[37px] -ml-2.5 -mt-1' ></i> */}
                     <br /><br /><br />
                     <div className="profile-container space-y-1">
@@ -38,17 +38,17 @@ const MenuUser = () => {
                     <br /><br /><br />
                     <Link to="/cadastro">
                         <div onClick={menuAlternar} className='flex pl-2'>
-                            <i class="fa-solid fa-right-from-bracket pt-1.5 text-2xl"></i>
+                            <i className="fa-solid fa-right-from-bracket pt-1.5 text-2xl"></i>
                             {/* <img className='w-[30px] h-[30px]' src="https://img.icons8.com/?size=100&id=22112&format=png&color=000000" alt="" /> */}
                             <div className='text-2xl font-semibold'>Sair</div>
                         </div>
                     </Link>
                 </div>
                 <nav className="flex w-full text-neutral-100 bg-gray-900 justify-between items-center p-4 shadow">
-                    <i class="fa-solid fa-bars  text-3xl pr-3" onClick={menuAlternar} ></i>
+                    <i className="fa-solid fa-bars  text-3xl pr-3" onClick={menuAlternar} ></i>
                     {/* <img onClick={menuAlternar} src={HamMenu} alt="" className='w-7 h-7' /> */}
                     {/* <img src={Bell} alt="" className='w-7 h-7' /> */}
-                    <i class="fa-solid fa-bell  text-3xl pr-3" onClick={menuAlternar} ></i>
+                    <i className="fa-solid fa-bell  text-3xl pr-3" onClick={menuAlternar} ></i>
 
                 </nav>
 
