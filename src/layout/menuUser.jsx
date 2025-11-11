@@ -16,11 +16,11 @@ const MenuUser = () => {
     return (
         <div>
             <header>
-                <div className={`menu-container fixed
+                <div className={`menu-container hidden fixed
                     lg:w-[20vw] absolute z-0 p-4
                     h-screen w-[60vw] bg-gray-900 text-neutral-100 shadow
                     ${menuAtivo ? "menu-ativo" : "menu-inativo"}
-                `}> <i onClick={menuAlternar} class="fa-solid fa-xmark text-3xl pr-3"></i>
+                `}> <i onClick={menuAlternar} className="fa-solid fa-xmark text-3xl pr-3"></i>
                     {/* <i onClick={menuAlternar} className='w-[48px] h-[37px] -ml-2.5 -mt-1' ></i> */}
                     <br /><br /><br />
                     <div className="profile-container space-y-1">
