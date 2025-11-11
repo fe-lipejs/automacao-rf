@@ -7,6 +7,7 @@ MenuUser from './layout/menuUser'
 
 // Paginas Admin
 import AdminAgenda from './pages/admin/agenda'
+import Dasbhboard from './pages/admin/dashboard'
 import Servico from './pages/admin/servico';
 import Perfil from './pages/admin/perfil';
 // Paginas Usuario
@@ -28,6 +29,7 @@ function App() {
         </Route>
         {/* Rotas admin */}
         <Route element={<MenuUser />}>
+          <Route path="/admin/dashboard" element={<Dasbhboard />} />
           <Route path="/admin/agenda" element={<AdminAgenda />} />
           <Route path="/admin/servico" element={<Servico/>}/>
           <Route path="/admin/perfil" element={<Perfil/>}/>
