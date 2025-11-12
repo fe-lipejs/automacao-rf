@@ -5,11 +5,18 @@ import
 // Layout Menu User
 MenuUser from './layout/menuUser'
 
-// Paginas Admin
-import AdminAgenda from './pages/admin/agenda'
+//#Paginas Admin
 import Dasbhboard from './pages/admin/dashboard'
 import Servico from './pages/admin/servico';
 import Perfil from './pages/admin/perfil';
+
+//Paginas Admin/Agenda:
+import AdminAgenda from './pages/admin/agenda/agenda'
+import AdminAgendaJornada from './pages/admin/agenda/jornada'
+import AdminAgendaCalendario from './pages/admin/agenda/calendario'
+
+
+
 // Paginas Usuario
 import Home from './pages/home'
 import Cadastro from './pages/cadastro'
@@ -30,9 +37,12 @@ function App() {
         {/* Rotas admin */}
         <Route element={<MenuUser />}>
           <Route path="/admin/dashboard" element={<Dasbhboard />} />
-          <Route path="/admin/agenda" element={<AdminAgenda />} />
           <Route path="/admin/servico" element={<Servico/>}/>
           <Route path="/admin/perfil" element={<Perfil/>}/>
+          <Route path="/admin/agenda" element={<AdminAgenda />} />
+          <Route path="/admin/agenda/jornada" element={<AdminAgendaJornada />} />
+          <Route path="/admin/agenda/calendario" element={<AdminAgendaCalendario />} />
+
         </Route>
       </Routes>
     </BrowserRouter>

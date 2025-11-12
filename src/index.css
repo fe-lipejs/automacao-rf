@@ -6,7 +6,23 @@ html, body, #root {
   width: 100%;
   margin: 0;
   padding: 0;
-  /* background-color: #171717;  */
+  background-color: #171717; 
+  color: #d4d4d4;
+}
+.containerRes{
+  width: 90vw;
+  max-width: 500px;
+}
+.allCenterHorizon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.allCenterVertical{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 /* Esconde a scrollbar em todos os navegadores */
 .scrollbar-hide::-webkit-scrollbar {
