@@ -39,8 +39,8 @@ function Dashboard() {
                         </div>
                         {/* Botão Editar Perfil */}
 
-                        <div 
-                            onClick={() =>{
+                        <div
+                            onClick={() => {
                                 navigate("/admin/perfil")
                             }}
                             className="m-5 p-2 w-full rounded-md cursor-pointer
@@ -48,31 +48,37 @@ function Dashboard() {
                             ">
                             Editar Perfil
                         </div>
- 
+
                     </div>
 
                     {/* Botões de Configuração */}
                     <div className="w-full h-full flex justify-center p-5">
-                        <Link to="/admin/servico">
-                            <div className="
-                        flex justify-center items-center
-                        h-18 w-18 m-2 rounded-md 
-                        bg-neutral-800 active:bg-neutral-700 cursor-pointer
-                        ">
-                                <i class="fa-solid fa-scissors"></i>
-                            </div>
-                        </Link>
-                        <div 
-                         onClick={() =>{
+
+
+
+                        <div
+                            onClick={() => {
                                 navigate("/admin/agenda")
                             }}
-                        className="
+                            className="
                             flex justify-center items-center
                             h-18 w-18 m-2 rounded-md 
                             bg-neutral-800 active:bg-neutral-700 cursor-pointer
                             text-xl
                         ">
                             <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+                        <div
+                            onClick={() => {
+                                navigate("/admin/servico")
+                            }}
+                            className="
+                            flex justify-center items-center
+                            h-18 w-18 m-2 rounded-md 
+                            bg-neutral-800 active:bg-neutral-700 cursor-pointer
+                            text-xl
+                          ">
+                            <i class="fa-solid fa-scissors"></i>
                         </div>
                         <div className="
                         flex justify-center items-center
