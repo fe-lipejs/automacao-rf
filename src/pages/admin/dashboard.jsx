@@ -62,11 +62,15 @@ function Dashboard() {
                                 <i class="fa-solid fa-scissors"></i>
                             </div>
                         </Link>
-                        <div className="
-                        flex justify-center items-center
-                        h-18 w-18 m-2 rounded-md 
-                        bg-neutral-800 active:bg-neutral-700 cursor-pointer
-                        text-xl
+                        <div 
+                         onClick={() =>{
+                                navigate("/admin/agenda")
+                            }}
+                        className="
+                            flex justify-center items-center
+                            h-18 w-18 m-2 rounded-md 
+                            bg-neutral-800 active:bg-neutral-700 cursor-pointer
+                            text-xl
                         ">
                             <i class="fa-solid fa-calendar-days"></i>
                         </div>

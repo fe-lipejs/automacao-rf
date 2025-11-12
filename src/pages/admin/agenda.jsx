@@ -1,20 +1,49 @@
 import React from "react";
 import AgendaPadrao from "../../components/agenda/agendaPadrao";
 import AgendaPersonalizada from "../../components/agenda/agendaPersonalizada";
+import { ChevronDown, ChevronUp, Clock, Calendar } from "lucide-react";
 
 function Agenda() {
     return (
-        <div className="flex justify-center items-cente">
-            <div className="
-                flex flex-col justify-center items-center
-                bg-neutral-50 p-5 w-[90vw] sm:w-[640px]  rounded-xl shadow-xl
-                ">
-                <AgendaPadrao/>
-                <br />
-                <AgendaPersonalizada/>
+        <>
+            <div className="text-neutral-300  h-screen">
+
+                {/* Container Geral */}
+                <div className=" flex flex-col items-center justify-center w-full h-full bg-neutral-900 p-5">
+
+                    <ChevronUp />
+                    
+                    <div className="container-jornada">
+                        <br /><br />
+                        <div className="w-[90vw] max-w-[500px] flex justify-between items-center bg-neutral-800 rounded-lg p-7">
+                            <div className="flex items-center">
+                                <Clock className="mr-4"/>
+                                <div className="flex flex-col ">
+                                    <span className="font-semibold text-md">Jornada de Trabalho</span>
+                                    <span className="text-[10px]">Dias e horários configurados</span>
+                                </div>
+                            </div>
+                            <ChevronDown />
+                        </div>
+                    </div>
+
+                    <div className="container-jornada flex flex-col">
+                        <br />
+                        <div className="w-[90vw] max-w-[500px] flex justify-between items-center bg-neutral-800 rounded-lg p-7">
+                            <div className="flex items-center">
+                                <Calendar className="mr-4"/>
+                                <div className="flex flex-col ">
+                                    <span className="font-semibold text-md">Jornada de Trabalho</span>
+                                    <span className="text-[10px]">Dias e horários configurados</span>
+                                </div>
+                            </div>
+                            <ChevronDown />
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-   
+
+        </>
     );
 }
 export default Agenda;
