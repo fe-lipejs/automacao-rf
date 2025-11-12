@@ -60,7 +60,7 @@ function Dashboard() {
                             onClick={() => {
                                 navigate("/admin/agenda")
                             }}
-                            className="
+                            className=" active:scale-90
                             flex justify-center items-center
                             h-18 w-18 m-2 rounded-md 
                             bg-neutral-800 active:bg-neutral-700 cursor-pointer
@@ -72,7 +72,7 @@ function Dashboard() {
                             onClick={() => {
                                 navigate("/admin/servico")
                             }}
-                            className="
+                            className="active:scale-90
                             flex justify-center items-center
                             h-18 w-18 m-2 rounded-md 
                             bg-neutral-800 active:bg-neutral-700 cursor-pointer
@@ -80,7 +80,7 @@ function Dashboard() {
                           ">
                             <i class="fa-solid fa-scissors"></i>
                         </div>
-                        <div className="
+                        <div className=" active:scale-90
                         flex justify-center items-center
                         h-18 w-18 m-2 rounded-md 
                         bg-neutral-800 active:bg-neutral-700 cursor-pointer

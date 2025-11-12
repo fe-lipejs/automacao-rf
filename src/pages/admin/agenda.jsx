@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"
 import AgendaPadrao from "../../components/agenda/agendaPadrao";
 import AgendaPersonalizada from "../../components/agenda/agendaPersonalizada";
@@ -6,6 +6,7 @@ import { ChevronDown, ChevronUp, ChevronLeft, Clock, Calendar } from "lucide-rea
 
 function Agenda() {
     const navegar = useNavigate();
+    const [abrirMenu, setAbrirMenu] = useState(false);
 
     return (
         <>
@@ -13,6 +14,7 @@ function Agenda() {
 
                 {/* Container Geral */}
                 <div className=" flex flex-col items-center w-full h-full bg-neutral-900 p-5">
+                    {/* TITULO PAGINA */}
                     <div className="w-[90vw] max-w-[500px] flex justify-between items-center">
                         <div
                             onClick={() => (navegar("/admin/dashboard"))}
@@ -22,11 +24,11 @@ function Agenda() {
                         </div>
                         <span className="mx-5 font-semibold text-lg text-right">Agenda do Administrador</span>
                     </div>
+                    <br /><br />
 
-
-                    <div className="container-jornada">
-                        <br /><br />
-                        <div className="w-[90vw] max-w-[500px] flex justify-between items-center bg-neutral-800 rounded-lg p-7">
+                    {/* Dias de Trabaalho */}
+                    <div className="active:scale-99 cursor-pointer container-jornada flex flex-col bg-neutral-800 rounded-lg">
+                        <div onClick={() => setAbrirMenu(!abrirMenu)} className="w-[90vw] max-w-[500px] flex justify-between items-center  p-7">
                             <div className="flex items-center">
                                 <Clock className="mr-4" />
                                 <div className="flex flex-col ">
@@ -34,11 +36,22 @@ function Agenda() {
                                     <span className="text-[10px]">Dias e horários configurados</span>
                                 </div>
                             </div>
-                            <ChevronDown />
+                            {
+                                abrirMenu === true ?
+                                    <ChevronUp onClick={() => setAbrirMenu(!abrirMenu)} />
+                                    :
+                                    <ChevronDown onClick={() => setAbrirMenu(!abrirMenu)} />
+
+
+                            }
                         </div>
+                        <div className={`${abrirMenu === false ? "h-0 mx-50" : "h-30 m-5"} informacoes bg-neutral-700 rounded-lg transition-all duration-500`}></div>
                     </div>
 
-                    <div className="container-jornada flex flex-col">
+
+
+                    {/* Calendario */}
+                    <div className="container-calendario flex flex-col">
                         <br />
                         <div className="w-[90vw] max-w-[500px] flex justify-between items-center bg-neutral-800 rounded-lg p-7">
                             <div className="flex items-center">
