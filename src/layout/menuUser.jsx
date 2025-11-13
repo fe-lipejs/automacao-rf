@@ -18,7 +18,7 @@ const MenuUser = () => {
             <header>
                 <div className={`menu-container hidden fixed
                     lg:w-[20vw] absolute z-0 p-4
-                    h-screen w-[60vw] bg-gray-900 text-neutral-100 shadow
+                    h-screen w-[60vw] bg-black-900 text-neutral-100 shadow
                     ${menuAtivo ? "menu-ativo" : "menu-inativo"}
                 `}> <i onClick={menuAlternar} className="fa-solid fa-xmark text-3xl pr-3"></i>
                     {/* <i onClick={menuAlternar} className='w-[48px] h-[37px] -ml-2.5 -mt-1' ></i> */}
@@ -44,7 +44,7 @@ const MenuUser = () => {
                         </div>
                     </Link>
                 </div>
-                <nav className="flex w-full text-neutral-100 bg-gray-900 justify-between items-center p-4 shadow">
+                <nav className="flex w-full text-neutral-100 bg-black-900 hidden justify-between items-center p-4 shadow">
                     <i className="fa-solid fa-bars  text-3xl pr-3" onClick={menuAlternar} ></i>
                     {/* <img onClick={menuAlternar} src={HamMenu} alt="" className='w-7 h-7' /> */}
                     {/* <img src={Bell} alt="" className='w-7 h-7' /> */}
