@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"
-import AgendaPadrao from "../../../components/agenda/agendaPadrao";
-import AgendaPersonalizada from "../../../components/agenda/agendaPersonalizada";
 import { Pen, ChevronDown, ChevronUp, ChevronLeft, Clock, Calendar } from "lucide-react";
 
 function Agenda() {
